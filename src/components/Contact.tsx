@@ -5,7 +5,7 @@ import { Textarea } from "./ui/textarea";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-
+import emailjs from "emailjs-com";
 export function Contact() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -13,15 +13,30 @@ export function Contact() {
     email: "",
     message: "",
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+const handleSubmit = (e) => {
+  e.preventDefault();
+  emailjs
+    .send(
+      "service_53r1mek",
+      "template_q5sff2f",
+      formData,
+      "BNvoP6f5bouQvkNtq"
+    )
+    .then(() => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    })
+    .catch((error) => {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+      });
+      console.error(error);
     });
-    setFormData({ name: "", email: "", message: "" });
-  };
+};
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden bg-muted/30">
