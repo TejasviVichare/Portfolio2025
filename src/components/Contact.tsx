@@ -17,8 +17,8 @@ const handleSubmit = (e) => {
   e.preventDefault();
   emailjs
     .send(
-      "service_53r1mek",
-      "template_q5sff2f",
+      "service_4akpcev",
+      "template_38qliia",
       formData,
       "BNvoP6f5bouQvkNtq"
     )
@@ -69,7 +69,9 @@ const handleSubmit = (e) => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Phone</p>
-                      <p className="font-medium">+91 9834593628</p>
+                      <p className="font-medium"><a href="tel:+919834593628" className="font-medium  hover:underline">
+  +91 9834593628
+</a></p>
                     </div>
                   </div>
 
@@ -79,7 +81,7 @@ const handleSubmit = (e) => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="font-medium break-all">tejasvivichare2121@gmail.com</p>
+                      <p className="font-medium break-all"><a href="mailto:tejasvivichare2121@gmail.com" className="font-medium  hover:underline">tejasvivichare2121@gmail.com</a></p>
                     </div>
                   </div>
 
@@ -104,7 +106,7 @@ const handleSubmit = (e) => {
                     <div className="space-y-2">
                       <label className="text-sm font-medium">Your Name</label>
                       <Input
-                        placeholder="John Doe"
+                        placeholder="Your Name"
                         value={formData.name}
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
@@ -116,7 +118,7 @@ const handleSubmit = (e) => {
                       <label className="text-sm font-medium">Your Email</label>
                       <Input
                         type="email"
-                        placeholder="john@example.com"
+                        placeholder="name@example.com"
                         value={formData.email}
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
@@ -129,7 +131,7 @@ const handleSubmit = (e) => {
                   <div className="space-y-2">
                     <label className="text-sm font-medium">Message</label>
                     <Textarea
-                      placeholder="Tell me about your project..."
+                      placeholder="Message..."
                       rows={6}
                       value={formData.message}
                       onChange={(e) =>

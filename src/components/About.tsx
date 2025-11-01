@@ -5,8 +5,8 @@ const services = [
   {
     icon: Code2,
     title: "Frontend Development",
-    description: "Building responsive and interactive web applications using React, TypeScript, and modern frameworks.",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+    description: "Building responsive and interactive web applications using React, Next.js, and modern frameworks.",
+    skills: ["React",  "Tailwind CSS", "Next.js"],
   },
   {
     icon: Laptop,
@@ -17,8 +17,8 @@ const services = [
   {
     icon: Smartphone,
     title: "React Development",
-    description: "Developing scalable applications with React ecosystem, including Redux, React Query, and custom hooks.",
-    skills: ["React Hooks", "Redux", "Context API", "Performance"],
+    description: "Developing scalable applications with React ecosystem, including Redux and custom hooks.",
+    skills: ["React Hooks", "Redux", "Context API"],
   },
 ];
 

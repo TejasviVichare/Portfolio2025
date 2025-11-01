@@ -29,9 +29,7 @@ export function Hero() {
           </div>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I craft beautiful, responsive web experiences with modern technologies. 
-            Passionate about clean code, intuitive design, and bringing ideas to life 
-            through elegant user interfaces.
+            Frontend Developer with 2+ years of experience building dynamic, responsive, and user-focused web applications using React.js and Next.js. Passionate about clean code, performance, and creating seamless digital experiences
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

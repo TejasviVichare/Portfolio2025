@@ -16,8 +16,8 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio showcasing projects and skills with smooth animations and responsive design. Built with modern web technologies.",
     tags: ["React", "TypeScript", "Tailwind CSS"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/TejasviVichare/Portfolio2025",
+    live: "https://portfolio2025-r8zu.vercel.app/",
     image: "/images/portfolio.jpg", 
 
   },
